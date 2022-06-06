@@ -4,6 +4,9 @@ pipeline {
         stage('Build Application') {
             steps {
                 echo "Build Application"
+                script {
+                    sh 'mvn clean install'
+                }
             }
             post {
                 success {
