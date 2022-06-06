@@ -1,14 +1,14 @@
 pipeline {
     agent any
     stages {
-//          stage('Build Application') {
-//             steps {
-//                 echo "Build Application"
-//                 script {
-//                     sh 'mvn clean install'
-//                     sh 'mvn --version'
-//                 }
-//              }
+          stage('Build Application') {
+            steps { 
+                script{
+                 sh 'mvn clean install'
+                }
+         }
+          }
+    
 //             post {
 //                 success {
 //                     echo "Now Archiving the Artifacts...."
