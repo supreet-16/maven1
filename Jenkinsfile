@@ -24,9 +24,10 @@ pipeline {
             
 //         }
         stage('Deploy to Production'){
-           
+            steps{
                 echo "Helloworld"
         }
+       }
     }
 }
             
